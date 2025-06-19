@@ -44,9 +44,8 @@ Este é um projeto simples de CRUD parcial (Create, Read, Delete) de produtos ut
 
 ## ⚙️ Instalação e Execução
 
-### 1. Clone o repositório
+1 - Clone o Repositorio 
 
-```bash
 git clone https://github.com/seu-usuario/seu-repositorio.git
 cd seu-repositorio
 
@@ -66,6 +65,7 @@ CREATE TABLE produtos (
   createdAt DATETIME NOT NULL,
   updatedAt DATETIME NOT NULL
 );
+
 ### 3.1 Configure suas credenciais criando um arquivo .env na raiz do projeto com base no exemplo abaixo:
 
 DB_NAME=cadastro_produtos
