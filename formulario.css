@@ -1,0 +1,86 @@
+/* ===== Fundo da Página ===== */
+body {
+  background: linear-gradient(to right, #e9ecef, #dee2e6);
+  margin: 0;
+  padding: 40px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ===== Estilo do Formulário ===== */
+.formulario {
+  width: 100%;
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 32px;
+  background-color: #ffffff; /* fundo claro */
+  border-radius: 16px;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+  color: #333333;
+  transition: transform 0.3s ease;
+}
+
+.formulario:hover {
+  transform: scale(1.01);
+}
+
+/* ===== Título ===== */
+.formulario h1 {
+  text-align: center;
+  margin-bottom: 28px;
+  font-size: 28px;
+  font-weight: 700;
+  color: #2c3e50;
+}
+
+/* ===== Campo (Grupo) ===== */
+.formulario div {
+  margin-bottom: 20px;
+}
+
+/* ===== Rótulo ===== */
+.formulario label.label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #555555;
+}
+
+/* ===== Campo de Entrada ===== */
+.formulario input.input {
+  width: 95%;
+  padding: 12px 14px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  background-color: #a8a8a8;
+  color: #333;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.formulario input.input:focus {
+  outline: none;
+  border-color: #28a745;
+  box-shadow: 0 0 8px rgba(40, 167, 69, 0.4);
+}
+
+/* ===== Botão ===== */
+.formulario button.botao {
+  width: 100%;
+  padding: 16px 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #28a745;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  box-shadow: 0 6px 14px rgba(40, 167, 69, 0.3);
+}
+
+.formulario button.botao:hover {
+  background-color: #218838;
+  box-shadow: 0 8px 18px rgba(33, 136, 56, 0.4);
+}
+  

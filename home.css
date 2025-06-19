@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #f9f7f7, #c9ccd5);
+
+
+    padding: 30px;
+    margin: 0;
+  }
+
+  h2.titulo {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+  }
+
+  a.botao-cadastrar {
+    display: inline-block;
+    margin-bottom: 25px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+
+  a.botao-cadastrar:hover {
+    background-color: #45a049;
+  }
+
+  .lista-produtos {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  }
+
+  .produto-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    transition: transform 0.2s;
+  }
+
+  .produto-card:hover {
+    transform: scale(1.02);
+  }
+
+  .produto-nome {
+    margin: 0 0 10px;
+    color: #222;
+  }
+
+  .produto-preco,
+  .produto-categoria {
+    margin: 5px 0;
+    color: #555;
+  }
+
+  .btn-deletar {
+  background-color: #e74c3c; /* vermelho */
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn-deletar:hover {
+  background-color: #c0392b; /* vermelho mais escuro ao passar o mouse */
+}
