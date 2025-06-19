@@ -1,63 +1,57 @@
-CadastraAqui
-------------------------------------------------------------------------------------------------------------------------------------------
-🛒 Cadastro de Produtos - Node.js + Express + MySQL
+# CadastraAqui
+
+---
+
+## 🛒 Cadastro de Produtos - Node.js + Express + MySQL
 
 Projeto simples para cadastro, listagem e exclusão de produtos utilizando:
 
-    Node.js
+- Node.js  
+- Express.js  
+- Sequelize (ORM)  
+- Express-Handlebars  
+- MySQL  
+- HTML + CSS  
 
-    Express.js
+> ⚠️ **Observação:** O projeto não possui edição de produtos (CRUD parcial: Create, Read, Delete).
 
-    Sequelize (ORM)
+---
 
-    Express-Handlebars
+## ✨ Funcionalidades
 
-    MySQL
+- ✅ Cadastrar novos produtos  
+- 📋 Listar produtos cadastrados  
+- ❌ Deletar produtos existentes  
 
-    HTML + CSS
+---
 
-    ⚠️ Observação: O projeto não possui edição de produtos (CRUD parcial: Create, Read, Delete).
-------------------------------------------------------------------------------------------------------------------------------------------
+## 📸 Prévia da Interface
 
-    ✨ Funcionalidades
+- Lista de produtos com nome, preço e categoria  
+- Botão para cadastro de novo produto  
+- Botão para exclusão de produtos  
 
-    ✅ Cadastrar novos produtos
+---
 
-    📋 Listar produtos cadastrados
+## 🛠️ Tecnologias Utilizadas
 
-    ❌ Deletar produtos existentes
-------------------------------------------------------------------------------------------------------------------------------------------
+- Node.js  
+- Express.js  
+- MySQL  
+- Sequelize  
+- Express-Handlebars  
+- HTML5 + CSS3  
 
-    📸 Prévia da Interface
-    
-        Lista de produtos com nome, preço e categoria
-    
-        Botão para cadastro de novo produto
-    
-        Botão para exclusão de produtos
-------------------------------------------------------------------------------------------------------------------------------------------
+---
 
-🛠️ Tecnologias Utilizadas
+## ⚙️ Instalação e Execução
 
-    Node.js
+### 1. Clone o repositório
 
-    Express.js
-
-    MySQL
-
-    Sequelize
-
-    Express-Handlebars
-
-    HTML5 + CSS3
-
-------------------------------------------------------------------------------------------------------------------------------------------
-
-⚙️ Instalação e Execução
-1. Clone o repositório
-
+```bash
 git clone https://github.com/seu-usuario/seu-repositorio.git
 cd seu-repositorio
+
 
 2. Instale as dependências
 
@@ -80,6 +74,7 @@ CREATE TABLE produtos (
   updatedAt DATETIME NOT NULL
 );
 
+
 4. Configure as variáveis de ambiente
 
 Crie um arquivo .env na raiz do projeto com suas credenciais:
@@ -94,6 +89,7 @@ DB_HOST=localhost
 node app.js
 # ou, se preferir com reload automático
 nodemon app.js
+
 
 📁 Estrutura do projeto
 
@@ -112,9 +108,3 @@ nodemon app.js
 ├── package.json
 ├── .env.example             # Exemplo de variáveis de ambiente
 └── .env                     # Configurações locais (não versionar)
-
-
-
-
-
-    
