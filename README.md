@@ -1,62 +1,76 @@
-# CadastraAqui
+CadastraAqui
+------------------------------------------------------------------------------------------------------------------------------------------
+🛒 Cadastro de Produtos - Node.js + Express + MySQL
 
-# 🛒 Cadastro de Produtos - Node.js + Express + MySQL
+Projeto simples para cadastro, listagem e exclusão de produtos utilizando:
 
-Este é um projeto simples de CRUD parcial (Create, Read, Delete) de produtos utilizando:
+    Node.js
 
-- Node.js
-- Express.js
-- Sequelize (ORM)
-- Express-Handlebars
-- MySQL
-- HTML + CSS
+    Express.js
 
-> ⚠️ O projeto atualmente **não possui edição de produtos**. Apenas cadastro, listagem e exclusão.
+    Sequelize (ORM)
 
----
+    Express-Handlebars
 
-## ✨ Funcionalidades
+    MySQL
 
-- ✅ Cadastrar novos produtos
-- 📋 Listar produtos cadastrados
-- ❌ Deletar produtos existentes
+    HTML + CSS
 
----
+    ⚠️ Observação: O projeto não possui edição de produtos (CRUD parcial: Create, Read, Delete).
+------------------------------------------------------------------------------------------------------------------------------------------
 
-## 📸 Prévia da interface
+    ✨ Funcionalidades
 
-- Lista de produtos com nome, preço e categoria
-- Botão para cadastro de novo produto
-- Botão para deletar produtos
+    ✅ Cadastrar novos produtos
 
----
+    📋 Listar produtos cadastrados
 
-## 🛠️ Tecnologias Utilizadas
+    ❌ Deletar produtos existentes
+------------------------------------------------------------------------------------------------------------------------------------------
 
-- [Node.js](https://nodejs.org/)
-- [Express.js](https://expressjs.com/)
-- [MySQL](https://www.mysql.com/)
-- [Sequelize](https://sequelize.org/)
-- [Express-Handlebars](https://www.npmjs.com/package/express-handlebars)
-- HTML5 + CSS3
+    📸 Prévia da Interface
+    
+        Lista de produtos com nome, preço e categoria
+    
+        Botão para cadastro de novo produto
+    
+        Botão para exclusão de produtos
+------------------------------------------------------------------------------------------------------------------------------------------
 
----
+🛠️ Tecnologias Utilizadas
 
-## ⚙️ Instalação e Execução
+    Node.js
 
-1 - Clone o Repositorio 
+    Express.js
+
+    MySQL
+
+    Sequelize
+
+    Express-Handlebars
+
+    HTML5 + CSS3
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+⚙️ Instalação e Execução
+1. Clone o repositório
 
 git clone https://github.com/seu-usuario/seu-repositorio.git
 cd seu-repositorio
 
+2. Instale as dependências
 
-### 2. Instale as Dependencias
 npm install
 
-### 3. Configure o Banco de Dados
+3. Configure o banco de dados
 
-. Crie um banco de dados no MySQL (exemplo: cadastro_produtos)
-. Crie a Tabela:
+    Crie o banco de dados no MySQL (exemplo: cadastro_produtos):
+
+CREATE DATABASE cadastro_produtos;
+
+    Crie a tabela produtos:
+
 CREATE TABLE produtos (
   id INT AUTO_INCREMENT PRIMARY KEY,
   nome VARCHAR(100) NOT NULL,
@@ -66,31 +80,41 @@ CREATE TABLE produtos (
   updatedAt DATETIME NOT NULL
 );
 
-### 3.1 Configure suas credenciais criando um arquivo .env na raiz do projeto com base no exemplo abaixo:
+4. Configure as variáveis de ambiente
+
+Crie um arquivo .env na raiz do projeto com suas credenciais:
 
 DB_NAME=cadastro_produtos
 DB_USER=root
 DB_PASS=sua_senha
 DB_HOST=localhost
 
-### 4. Execute o Projeto
+5. Execute o projeto
 
-node app.js ou nodemon app.js
+node app.js
+# ou, se preferir com reload automático
+nodemon app.js
 
-5. Estrutura das Pastas
+📁 Estrutura do projeto
 
 .
-├── models/                 # Modelos Sequelize (Post.js)
+├── models/                  # Modelos Sequelize (ex: Produto.js)
 ├── views/
-│   ├── layouts/            # Layout padrão (main.handlebars)
-│   ├── home.handlebars     # Página de listagem de produtos
-│   └── formulario.handlebars # Página de cadastro de produtos
+│   ├── layouts/             # Layout padrão (main.handlebars)
+│   ├── home.handlebars      # Página de listagem de produtos
+│   └── formulario.handlebars# Página de cadastro de produtos
 ├── public/
-│   ├── css/                # Estilos CSS
+│   ├── css/                 # Estilos CSS
 │   │   ├── home.css
 │   │   └── formulario.css
-├── app.js                  # Arquivo principal do servidor
-├── db.js                   # Conexão com o banco de dados
+├── app.js                   # Arquivo principal do servidor
+├── db.js                    # Conexão com banco de dados
 ├── package.json
-├── .env.example            # Exemplo de variáveis de ambiente
+├── .env.example             # Exemplo de variáveis de ambiente
+└── .env                     # Configurações locais (não versionar)
 
+
+
+
+
+    
