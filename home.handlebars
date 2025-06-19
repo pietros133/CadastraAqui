@@ -1,3 +1,5 @@
+<h1 class="titulo-principal">CadastraAqui</h1>
+
 <h2 class="titulo">Lista de Produtos</h2>
 <link rel="stylesheet" href="/css/home.css">
 <a href="/cad" class="botao-cadastrar">Cadastrar novo produto</a>
@@ -8,7 +10,9 @@
       <h3 class="produto-nome">{{nome}}</h3>
       <p class="produto-preco"><strong>Preço:</strong> R$ {{preco}}</p>
       <p class="produto-categoria"><strong>Categoria:</strong> {{categoria}}</p>
-     <a href="/deletar/{{id}}"> <button class="btn-deletar">Deletar</button> </a>
+      <a href="/deletar/{{id}}">
+        <button class="btn-deletar">Deletar</button>
+      </a>
     </div>
   {{/each}}
 </div>
